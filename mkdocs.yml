@@ -1,0 +1,42 @@
+# Technical-Writing-Portfolio
+site_name: Technical Writing Portfolio
+site_description: Clear, concise, and developer-focused documentation by <Your Name>
+site_url: https://<your-username>.github.io/tech-writing-portfolio/
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.tracking
+    - navigation.footer
+    - content.code.copy
+    - content.action.edit
+    - search.suggest
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+nav:
+  - Home: index.md
+  - Pieces:
+      - "API Quickstart – Sample": pieces/api-quickstart.md
+      - "Runbook – Service X": pieces/runbook-service-x.md
+      - "How-To – CLI Setup": pieces/howto-cli-setup.md
+  - About: about.md
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/<your-username>
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/<your-linkedin>/
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.tabbed
+  - pymdownx.emoji
+  - pymdownx.superfences
+
